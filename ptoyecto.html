@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sour & Sweet</title>
+  <link rel="stylesheet" href="styl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header flex-header" id="inicio">
+    <div>
+      <h1>Sour & Sweet</h1>
+      <p class="slogan">¡Tu antojo, dulce o salado, en un solo lugar!</p>
+</div>
+</div>
+
+  <div class="social">
+    <a href="https://facebook.com"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+    <a href="https://instagram.com/sour_sweet._?ighs=aWt4MzA3ZzRoaGls"><i class="fa-brands fa-instagram" style="color: lightpink;"></i></a>
+    <a href="https://wa.me/"><i class="fa-brands fa-whatsapp" style="color: lightgreen;"></i></a>
+    <a href="tel:+526674258503"><i class="fa-solid fa-phone" style="color: lightgray;"></i></a>
+</div>
+
+
+
+  <div class="navbar">
+    <a class="active" href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="#menu"><i class="fa-solid fa-bars"></i> Menú</a>
+    <a href="#dulces"><i class="fa-solid fa-cookie-bite"></i> Dulces</a>
+    <a href="#salados"><i class="fa-solid fa-lemon"></i> Salados</a>
+    <a href="#shop"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+  </div>
+
+  <div class="content">
+
+    <section id="dulces">
+      <h2>Dulces</h2>
+      <div class="image-container left">
+        <img src="brownie.jpg" alt="Brownies">
+      </div>
+      <div class="image-container right">
+        <img src="roldecanela.jpg" alt="Roles de canela">
+      </div> 
+		<div class="image-container left">
+        <img src="galleta.jpg" alt="Galletas">
+      </div>
+
+      <table class="tabla-estilo">
+        <caption>Información nutricional</caption>
+        <tr>
+          <th>Producto</th>
+          <th>Calorías</th>
+          <th>Azúcar</th>
+        </tr>
+        <tr>
+          <td>Brownies</td>
+          <td>350 kcal</td>
+          <td>25 g</td>
+        </tr>
+        <tr>
+          <td>Roles de canela</td>
+          <td>290 kcal</td>
+          <td>20 g</td>
+        </tr>
+        <tr>
+          <td>Galletas</td>
+          <td>200 kcal</td>
+          <td>15 g</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="salados">
+      <h2>Salados</h2>
+      <div class="image-container left">
+        <img src="papas.jpg" alt="Papas preparadas">
+      </div>
+      <div class="image-container right">
+        <img src="palomitas.jpg" alt="Palomitas">
+      </div>
+	 	<div class="image-container left">
+        <img src="gomitas.jpg" alt="Gomitas">
+      </div>
+
+      <table class="tabla-estilo">
+        <caption>Información nutricional</caption>
+        <tr>
+          <th>Producto</th>
+          <th>Calorías</th>
+          <th>Sodio</th>
+        </tr>
+        <tr>
+          <td>Papas preparadas</td>
+          <td>400 kcal</td>
+          <td>500 mg</td>
+        </tr>
+        <tr>
+          <td>Palomitas</td>
+          <td>150 kcal</td>
+          <td>200 mg</td>
+        </tr>
+ <tr>
+          <td>Gomitas enchiladas</td>
+          <td>180 kcal</td>
+          <td>22 g</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="menu">
+      <h2>Menú</h2>
+      <div class="menu-grupo">
+
+        <div class="categoria">
+          <h3 class="titulo-categoria">Dulces</h3>
+
+          <div class="tarjeta dulce">
+            <h4>Galletas</h4>
+            <p>Crujientes, dulces y con chispas de chocolate.</p>
+            
+            <p><strong>Precio:</strong> $19</p>
+          </div>
+
+          <div class="tarjeta dulce">
+            <h4>Brownies</h4>
+            <p>Esponjosos y con azúcar glass.</p>
+            
+            <p><strong>Precio:</strong> $28</p>
+          </div>
+
+         
+
+          <div class="tarjeta dulce">
+            <h4>Roles de canela</h4>
+            <p>Suaves y cubiertos con glaseado casero.</p>
+            
+            <p><strong>Precio:</strong> $20</p>
+          </div>
+        </div>
+
+        <div class="categoria">
+          <h3 class="titulo-categoria">Salados</h3>
+
+          <div class="tarjeta salado">
+            <h4>Palomitas</h4>
+            <p>Saladas, crujientes y recién hechas.</p>
+            
+            <p><strong>Precio:</strong> $15</p>
+          </div>
+
+          <div class="tarjeta salado">
+            <h4>Papas preparadas</h4>
+            <p>Elige tus toppings para tus papas.</p>
+          
+            <p><strong>Precio:</strong> $42</p>
+          </div>
+
+			 <div class="tarjeta dulce">
+            <h4>Gomitas enchiladas</h4>
+            <p>Dulces con un toque picosito y tamarindo.</p>
+           
+            <p><strong>Precio:</strong> $22</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<section id="shop">
+      <h2>Compra en línea</h2>
+
+      <form class="formulario-compra">
+<label for="producto"> Producto:</label>
+<select id="producto" name="producto">
+	<option value="galletas">Galletas</option>
+	<option value="gomitas">Gomitas</option>
+<option value="papas">Papas</option>
+<option value="palomitas">Palomitas</option>
+<option value="brownies">Brownies</option>
+<option value="rolesdecanela">Roles de canela</option>
+</select>
+ 
+<label for="cantidad">Cantidad:</label>
+<input type="number" id="cantidad" name="cantidad" min="1" value="1">
+<label for="envio">Información de envío:</label>
+<textarea id="envio" name="envio" rows="3" placeholder="Escribe tu direeción, referencias, etc."></textarea>
+
+<button type="submit"> Añadir al carrito</ button>
+</form>
+</section>
+
+
+    <section id="Tips">
+      <h2>Tips y Consejos</h2>
+      <div class="blog-post">
+        <h3>¿Cómo conservar tus snacks frescos?</h3>
+        <p>-Guarda tus productos en frascos cerrados y evita lugares húmedos.</p>
+        <h3>Combina sabores</h3>
+        <p>-Prueba gomitas enchiladas con palomitas para un sabor agridulce explosivo.</p>
+<p> -Crea una tabla de snacks para ver peliculas con tus amigos</p>
+      </div>
+    </section>
+
+
+  </div>
+
+  <footer>
+    <h3>Sobre nosotros</h3>
+    <p>Somos una empresa dedicada a la elaboración y comercialización de snacks fundada en 2025 en la ciudad de Culiacán,Sinaloa. Contamos con una amplia variedad de postres para satisfacer tu antojo.</p>
+    <h4>Preguntas frecuentes</h4>
+    <p>¿Hacen entregas? Si, solo en Culiacán, Sinaloa.</p>
+    <h4>Contacto</h4>
+    <p>Email: contacto@sourandsweet.com</p>
+    <h4>Dirección</h4>
+    <p>Av Villas del Río 2806, Fracc Villas del Río, 80050 Culiacán, Sinaloa</p>
+ <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av+Villas+del+Río+2806,+Culiacán,+Sinaloa&output=embed" width="100%" height="250" style="border:0;" allowfullscreen></iframe>
+  </footer>
+
+  <div class="logo-final">
+    <img src="logo.png" alt="Logo Sour & Sweet">
+    <p class="logo-text">Gracias por visitar Sour & Sweet.</p>
+<p>&copy; 2025 Sour and Sweet. Todos los derechos reservados. </p>
+  </div>
+
+<button onclick="scrollToTop()" id="btnTop" title="Ir arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script>
+    const btn = document.getElementById("btnTop");
+    window.onscroll = function() {
+      btn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
+
+    
